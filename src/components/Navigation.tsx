@@ -16,7 +16,7 @@ export function Navigation() {
         </Link>
 
         {user ? (
-          <div className="flex items-center space-x-4">
+          <div className="ml-auto flex gap-4 sm:gap-6">
             <Link href="/dashboard">
               <Button variant="ghost" size="sm" className="flex items-center space-x-2">
                 <HomeIcon size={16} />

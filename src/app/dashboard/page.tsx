@@ -71,7 +71,7 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col items-center min-h-screen  bg-gray-50">
       <Navigation />
       
       <main className="max-w-2xl mx-auto px-4 py-8">
@@ -103,7 +103,7 @@ export default function Dashboard() {
           <div className="space-y-6">
             {posts.map((post) => (
               <Card key={post.id} className="hover:shadow-md transition-shadow">
-                <CardHeader className="pb-3">
+                <CardHeader className="pb-0 mb-0">
                   <div className="flex items-start space-x-3">
                     <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                       <UserIcon size={20} className="text-blue-600" />
@@ -116,11 +116,6 @@ export default function Dashboard() {
                         >
                           {post.author.name}
                         </Link>
-                        <span className="text-gray-500">•</span>
-                        <div className="flex items-center space-x-1 text-gray-500 text-sm">
-                          <ClockIcon size={14} />
-                          <span>{formatDate(post.createdAt)}</span>
-                        </div>
                       </div>
                       {post.author.bio && (
                         <p className="text-sm text-gray-600 mt-1">{post.author.bio}</p>
@@ -128,8 +123,11 @@ export default function Dashboard() {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent className="pt-0">
+                <CardContent className="pt-0 mt-0">
                   <p className="text-gray-900 whitespace-pre-wrap">{post.content}</p>
+                  <div className="flex items-center space-x-1 text-gray-500 text-sm pt-3">
+                          <span>{formatDate(post.createdAt)}</span>
+                        </div>
                 </CardContent>
               </Card>
             ))}

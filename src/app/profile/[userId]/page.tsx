@@ -84,9 +84,9 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="flex flex-col items-center min-h-screen  bg-gray-50">
         <Navigation />
-        <main className="max-w-4xl mx-auto px-4 py-8">
+        <main className="max-w-2xl mx-auto px-4 py-8">
           <div className="text-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
             <p className="mt-2 text-gray-600">Loading profile...</p>
@@ -98,7 +98,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
 
   if (!user) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen flex flex-col items-center bg-gray-50">
         <Navigation />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
@@ -113,7 +113,7 @@ export default function ProfilePage({ params }: { params: Promise<{ userId: stri
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col items-center bg-gray-50">
       <Navigation />
       
       <main className="max-w-4xl mx-auto px-4 py-8">

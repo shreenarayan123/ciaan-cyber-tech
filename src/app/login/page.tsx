@@ -74,7 +74,7 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen flex flex-col items-center bg-gray-50">
       <Navigation />
       
       <main className="max-w-md mx-auto px-4 py-16">
