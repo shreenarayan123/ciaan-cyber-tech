@@ -20,7 +20,7 @@ const CTA = () => {
               </div>
               <div className="space-x-4">
                 <Link href="/register">
-                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100">
+                <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100 cursor-pointer">
                   Sign Up Now
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

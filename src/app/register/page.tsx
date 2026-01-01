@@ -83,7 +83,7 @@ export default function Register() {
     <div className="min-h-screen flex flex-col items-center bg-gray-50">
       <Navigation />
       
-      <main className="max-w-md mx-auto px-4 py-16">
+      <main className="w-md mx-auto px-4 py-16">
         <Card>
           <CardHeader>
             <CardTitle>Create Account</CardTitle>

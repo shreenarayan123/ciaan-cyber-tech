@@ -54,7 +54,7 @@ export function Navigation() {
             How It Works
           </Link>
           <Link className="text-sm font-medium hover:text-blue-600 transition-colors" href="/login">
-            <Button variant="outline" size="sm" className="flex items-center space-x-2">
+            <Button variant="outline" size="sm" className="flex items-center space-x-2 cursor-pointer">
                Login
               </Button>
           </Link>
